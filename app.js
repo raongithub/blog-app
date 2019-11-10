@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost/blog-app', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
+    useFindAndModify: false,
 });
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
