@@ -5,6 +5,7 @@ const bodyParser       = require('body-parser'),
       express          = require('express'),
       app              = express()
 
+// CONFIG APP & MONGOOSE
 mongoose.connect('mongodb://localhost/blog-app', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(expressSanitizer())
 app.use(methodOverride('_method'))
 
+// Create MONGOOSE SCHEMA / MODEL CONFIG
 let blogSchema = new mongoose.Schema({
     title: String,
     image: String,
@@ -26,6 +28,7 @@ let blogSchema = new mongoose.Schema({
     }
 })
 
+// Compile into the model created
 let Blog = mongoose.model('Blog', blogSchema)
 
 // RESTful ROUTES
