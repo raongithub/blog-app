@@ -26,7 +26,7 @@ let blogSchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
     }
-})
+});
 
 // Compile into the model created
 let Blog = mongoose.model('Blog', blogSchema);
