@@ -6,8 +6,6 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "author": "raongithub",
   "license": "ISC",
@@ -19,8 +17,5 @@
     "express-sanitizer": "^1.0.5",
     "method-override": "^3.0.0",
     "mongoose": "^5.7.9"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
 }
