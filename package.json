@@ -9,7 +9,6 @@
   },
   "author": "raongithub",
   "license": "ISC",
-  "homepage": "https://raongithub.github.io/blog-app",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^2.7.1",
